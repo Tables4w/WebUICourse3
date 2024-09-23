@@ -17,63 +17,75 @@ header{
     order: 1;
     border-bottom: solid;
     border-bottom-color: white;
+    margin-bottom: 20px;
 }
 
-#midblocks{
+.midblocks{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.midblocks>*{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #264d8f;
+    border: solid;
+    border-color: white;
+    max-width: 960px;
+    min-width: 960px;
 }
 
 .logoblock{
-    flex: 1;
+    display: flex;
+    margin: 10px;
+    order: 1;
+    flex-direction: row;
+    flex-shrink: 1;
     border-radius:50%;
 }
 
-#midblocks nav{
-    background-color:#264d8f; 
-    flex:auto;
+nav{
+    display: flex;
+    flex-direction: column;
     order: 1;
-    border-bottom-color: white;
-    border-left: solid;
-    border-left-color: white;
+    align-items: center;
 }
 
 .logotext{
-    flex:2;
-    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    order: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 55px;
     color:#8fafcc;
     text-decoration: none;
 }
 
 .navrefer{
-    display: flex;
-    flex: 1;
     text-decoration: none;
     font-size: 46px;
     color:#aed7fd;
 }
 
-#midblocks .referblock {
-    flex: none;
+.referblock {
     order:4;
-    background-color: #264d8f;
-    border: solid;
-    border-color: white;
 }
 
-#midblocks .tableblock {
+.tableblock {
     flex: none;
     order:3;
-    background-color: #264d8f;
-    border: solid;
-    border-color: white;
 }
 
 .midheader{
     color: #aed7fd;
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 100px;
+    font-size: 3em;
 }
 
 p{
@@ -131,8 +143,7 @@ label{
     color: #aed7fd;
 }
 
-#midblocks form {
-    flex: none;
+form {
     order: 5;
     border: solid;
     background-color: #264d8f;
@@ -143,26 +154,19 @@ form > * {
     display: block;
     margin-top: 10px;
     margin-bottom: 25px;
-    margin-left: auto;
     width: 200px;
-    margin-right: auto;
     font-size: 20px;
 }
 
 .radio{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
     color: #aed7fd;
 }
 
 footer{
-    position: static;
-    bottom: 0px;
-    width:100%; 
+    display: flex;
+    order: 6;
     background-color:#062249; 
-    height:60px;
-    margin-top: 50px;
+    margin-top: 20px;
     border-top: solid;
     border-top-color: white;
 }
