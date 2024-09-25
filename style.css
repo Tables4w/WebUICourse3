@@ -38,8 +38,8 @@ header{
 
     /*Не 100% ширина, чтобы были видны границы блока*/
 
-    max-width: 99.4vw;
-    min-width: 99.4vw;
+    max-width: 99.7vw;
+    min-width: 99.7vw;
 }
 
 .logoblock{
